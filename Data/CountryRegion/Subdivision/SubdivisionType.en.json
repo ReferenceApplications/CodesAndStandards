@@ -1,0 +1,5 @@
+[
+	 { "SubdivisionTypeId":0, "Name":"Unknown", "Iso639_1Code":"en" }
+	,{ "SubdivisionTypeId":1, "Name":"State", "Iso639_1Code":"en" }
+	,{ "SubdivisionTypeId":2, "Name":"District", "Iso639_1Code":"en" }
+]
