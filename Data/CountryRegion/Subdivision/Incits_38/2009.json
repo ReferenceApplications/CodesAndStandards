@@ -1,4 +1,4 @@
-[
+﻿[
 	 { "SubdivisionId":1840, "NumericCode":"01", "UspsCode":"AL", "Iso639_1Code":"en", "Name":"Alabama", "DateCreated":"2013-04-11", "DateEffective":"2007-07-15", "Reason":"FIPS/ANSI", "Author":"DustenSalinas" }
 	,{ "SubdivisionId":2840, "NumericCode":"02", "UspsCode":"AK", "Iso639_1Code":"en", "Name":"Alaska", "DateCreated":"2013-04-11", "DateEffective":"2007-07-15", "Reason":"FIPS/ANSI", "Author":"DustenSalinas" }
 	,{ "SubdivisionId":4840, "NumericCode":"04", "UspsCode":"AZ", "Iso639_1Code":"en", "Name":"Arizona", "DateCreated":"2013-04-11", "DateEffective":"2007-07-15", "Reason":"FIPS/ANSI", "Author":"DustenSalinas" }

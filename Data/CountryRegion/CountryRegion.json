@@ -1,4 +1,4 @@
-[
+﻿[
 	 { "CountryRegionId":4, "CountryRegionTypeId":1, "DateCreated":"2013-04-11", "DateEffective":"2007-07-15", "Reason":"ISO 3166-1:2006/Cor 1:2007", "Author":"DustenSalinas" }
 	,{ "CountryRegionId":8, "CountryRegionTypeId":1, "DateCreated":"2013-04-11", "DateEffective":"2007-07-15", "Reason":"ISO 3166-1:2006/Cor 1:2007", "Author":"DustenSalinas" }
 	,{ "CountryRegionId":10, "CountryRegionTypeId":1, "DateCreated":"2013-04-11", "DateEffective":"2007-07-15", "Reason":"ISO 3166-1:2006/Cor 1:2007", "Author":"DustenSalinas" }

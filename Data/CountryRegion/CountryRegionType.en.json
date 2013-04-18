@@ -1,4 +1,4 @@
-[
+﻿[
 	 { "CountryRegionTypeId":0, "Name":"Unknown", "Iso639_1Code":"en" }
 	,{ "CountryRegionTypeId":1, "Name":"Country", "Iso639_1Code":"en" }
 	,{ "CountryRegionTypeId":2, "Name":"Dependent Territory", "Iso639_1Code":"en" }

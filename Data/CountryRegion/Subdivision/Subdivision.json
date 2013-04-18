@@ -1,4 +1,4 @@
-[
+﻿[
 	 { "SubdivisionId":1840, "CountryRegionId":840, "SubdivisionTypeId":1, "DateCreated":"2013-04-14", "DateEffective":"1998-01-01", "Reason":"ISO 3166-2 Created", "Author":"DustenSalinas" }
 	,{ "SubdivisionId":2840, "CountryRegionId":840, "SubdivisionTypeId":1, "DateCreated":"2013-04-14", "DateEffective":"1998-01-01", "Reason":"ISO 3166-2 Created", "Author":"DustenSalinas" }
 	,{ "SubdivisionId":4840, "CountryRegionId":840, "SubdivisionTypeId":1, "DateCreated":"2013-04-14", "DateEffective":"1998-01-01", "Reason":"ISO 3166-2 Created", "Author":"DustenSalinas" }
