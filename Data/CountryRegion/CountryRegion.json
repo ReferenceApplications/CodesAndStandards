@@ -151,10 +151,10 @@
 	,{ "CountryRegionId":524, "CountryRegionTypeId":0, "DateCreated":"2013-04-11", "DateEffective":"2007-07-15", "Reason":"ISO 3166-1:2006/Cor 1:2007", "Author":"DustenSalinas" }
 	,{ "CountryRegionId":528, "CountryRegionTypeId":0, "DateCreated":"2013-04-11", "DateEffective":"2007-07-15", "Reason":"ISO 3166-1:2006/Cor 1:2007", "Author":"DustenSalinas" }
 	,{ "CountryRegionId":530, "CountryRegionTypeId":0, "DateCreated":"2013-04-11", "DateEffective":"2007-07-15", "DateEnded":"2010-12-15", "DateReplaced":"2010-12-15", "Reason":"ISO 3166-1:2006/Cor 1:2007", "Author":"DustenSalinas" }
-	,{ "CountryRegionId":531, "CountryRegionTypeId":0, "CountryRegionId":530, "DateCreated":"2013-04-11", "DateEffective":"2010-12-15", "Reason":"ISO 3166-1 Newsletter VI-8", "Author":"DustenSalinas" }
+	,{ "CountryRegionId":531, "CountryRegionTypeId":0, "OriginalCountryRegionId":530, "DateCreated":"2013-04-11", "DateEffective":"2010-12-15", "Reason":"ISO 3166-1 Newsletter VI-8", "Author":"DustenSalinas" }
 	,{ "CountryRegionId":533, "CountryRegionTypeId":0, "DateCreated":"2013-04-11", "DateEffective":"2007-07-15", "Reason":"ISO 3166-1:2006/Cor 1:2007", "Author":"DustenSalinas" }
-	,{ "CountryRegionId":534, "CountryRegionTypeId":0, "CountryRegionId":530, "DateCreated":"2013-04-11", "DateEffective":"2010-12-15", "Reason":"ISO 3166-1:2006/Cor 1:2007", "Author":"DustenSalinas" }
-	,{ "CountryRegionId":535, "CountryRegionTypeId":0, "CountryRegionId":530, "DateCreated":"2013-04-11", "DateEffective":"2010-12-15", "Reason":"ISO 3166-1 Newsletter VI-8", "Author":"DustenSalinas" }
+	,{ "CountryRegionId":534, "CountryRegionTypeId":0, "OriginalCountryRegionId":530, "DateCreated":"2013-04-11", "DateEffective":"2010-12-15", "Reason":"ISO 3166-1:2006/Cor 1:2007", "Author":"DustenSalinas" }
+	,{ "CountryRegionId":535, "CountryRegionTypeId":0, "OriginalCountryRegionId":530, "DateCreated":"2013-04-11", "DateEffective":"2010-12-15", "Reason":"ISO 3166-1 Newsletter VI-8", "Author":"DustenSalinas" }
 	,{ "CountryRegionId":540, "CountryRegionTypeId":0, "DateCreated":"2013-04-11", "DateEffective":"2007-07-15", "Reason":"ISO 3166-1:2006/Cor 1:2007", "Author":"DustenSalinas" }
 	,{ "CountryRegionId":548, "CountryRegionTypeId":0, "DateCreated":"2013-04-11", "DateEffective":"2007-07-15", "Reason":"ISO 3166-1:2006/Cor 1:2007", "Author":"DustenSalinas" }
 	,{ "CountryRegionId":554, "CountryRegionTypeId":0, "DateCreated":"2013-04-11", "DateEffective":"2007-07-15", "Reason":"ISO 3166-1:2006/Cor 1:2007", "Author":"DustenSalinas" }
@@ -191,7 +191,7 @@
 	,{ "CountryRegionId":659, "CountryRegionTypeId":0, "DateCreated":"2013-04-11", "DateEffective":"2007-07-15", "Reason":"ISO 3166-1:2006/Cor 1:2007", "Author":"DustenSalinas" }
 	,{ "CountryRegionId":660, "CountryRegionTypeId":0, "DateCreated":"2013-04-11", "DateEffective":"2007-07-15", "Reason":"ISO 3166-1:2006/Cor 1:2007", "Author":"DustenSalinas" }
 	,{ "CountryRegionId":662, "CountryRegionTypeId":0, "DateCreated":"2013-04-11", "DateEffective":"2007-07-15", "Reason":"ISO 3166-1:2006/Cor 1:2007", "Author":"DustenSalinas" }
-	,{ "CountryRegionId":663, "CountryRegionTypeId":0,"OriginalCountryRegionId":312,  "DateCreated":"2013-04-11", "DateEffective":"2007-09-21", "Reason":"ISO 3166-1 Newsletter VI-1", "Author":"DustenSalinas" }
+	,{ "CountryRegionId":663, "CountryRegionTypeId":0, "OriginalCountryRegionId":312,  "DateCreated":"2013-04-11", "DateEffective":"2007-09-21", "Reason":"ISO 3166-1 Newsletter VI-1", "Author":"DustenSalinas" }
 	,{ "CountryRegionId":666, "CountryRegionTypeId":0, "DateCreated":"2013-04-11", "DateEffective":"2007-07-15", "Reason":"ISO 3166-1:2006/Cor 1:2007", "Author":"DustenSalinas" }
 	,{ "CountryRegionId":670, "CountryRegionTypeId":0, "DateCreated":"2013-04-11", "DateEffective":"2007-07-15", "Reason":"ISO 3166-1:2006/Cor 1:2007", "Author":"DustenSalinas" }
 	,{ "CountryRegionId":674, "CountryRegionTypeId":0, "DateCreated":"2013-04-11", "DateEffective":"2007-07-15", "Reason":"ISO 3166-1:2006/Cor 1:2007", "Author":"DustenSalinas" }
