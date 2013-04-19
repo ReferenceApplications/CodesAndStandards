@@ -47,6 +47,29 @@
       <Name>CodeGen</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="JSON\countryRegions.en.current.json">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>countryRegions.en.current.tt</DependentUpon>
+    </None>
+    <None Include="JSON\countryRegions.en.current.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>countryRegions.en.current.json</LastGenOutput>
+    </None>
+    <None Include="JSON\unitedStates.States.en.json">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>unitedStates.States.en.tt</DependentUpon>
+    </None>
+    <None Include="JSON\unitedStates.States.en.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>unitedStates.States.en.json</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

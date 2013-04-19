@@ -1,0 +1,40 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="System.Web.Extensions" #>
+<#@ assembly name ="$(ProjectDir)$(OutDir)ReferenceApplications.CodesAndStandards.CodeGen.dll" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Web.Script.Serialization" #>
+<#@ import namespace="CodesAndStandards" #>
+<#@ import namespace="CodesAndStandards.Model" #>
+<#@ output extension=".json" encoding="utf-8" #>
+<#
+	var dataPath = Path.Combine(Path.GetDirectoryName(this.Host.ResolvePath(this.Host.TemplateFile)), "../../../", "Data");
+	CodeGenEngine engine = new CodeGenEngine(dataPath);
+	var countryRegions = engine.GetCurrentHydratedCountryRegions();
+	var usa = countryRegions.Single(e => e.CountryRegionId == 840);
+	var simpleStates = usa.Subdivisions.Select(e => new SimpleState(e)).ToList();
+
+	var ser = new JavaScriptSerializer();
+#>
+<#=ser.Serialize(simpleStates).Replace("},{", "},\r\n\t{").Replace("[{","[\r\n\t{").Replace("}]", "}\r\n]")#>
+<#+
+	public class SimpleState
+	{
+		public int Id { get; set; }
+		public string Name { get; set; }
+		public string UspsCode { get; set; }
+		public string NumericCode { get; set; }
+
+		public SimpleState(Subdivision sd)
+		{
+			var incits = sd.Incits_38s.Single(e => e.Iso639_1Code == "en");
+			Id = sd.Key;
+			Name = incits.Name;
+			UspsCode = incits.UspsCode;
+			NumericCode = incits.NumericCode;
+		}
+	}
+#>

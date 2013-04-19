@@ -6,6 +6,30 @@ using System.Threading.Tasks;
 
 namespace CodesAndStandards.Model.Framework
 {
+	public abstract class Jepit<TJepit, TKey> : Jepit<TKey>
+		where TJepit : Jepit<TKey>, new()
+		where TKey : struct
+	{
+		public virtual TJepit CloneWithDurationFilter(Jepit jepit)
+		{
+			var effectiveDates = jepit.GetEffectiveDateRange();
+			return CloneWithDurationFilter(effectiveDates.Item1, effectiveDates.Item2);
+		}
+
+		public virtual TJepit CloneWithPitFilter(DateTime date)
+		{
+			return CloneWithDurationFilter(date, date);
+		}
+
+		public abstract TJepit CloneWithDurationFilter(DateTime dateFrom, DateTime dateTo);
+
+		public virtual TJepit Clone()
+		{
+			return base.Clone<TJepit>();
+		}
+	}
+
+
 	/// <summary>
 	/// 
 	/// </summary>
@@ -15,6 +39,16 @@ namespace CodesAndStandards.Model.Framework
 	{
 		public TKey Key { get; set; }
 		public Nullable<TKey> OriginalKey { get; set; }
+
+
+		protected new TJepit Clone<TJepit>()
+			where TJepit : Jepit<TKey>, new()
+		{
+			var returnVal = base.Clone<TJepit>();
+			returnVal.Key = Key;
+			returnVal.OriginalKey = OriginalKey;
+			return returnVal;
+		}
 	}
 
 	/// <summary>
@@ -28,6 +62,20 @@ namespace CodesAndStandards.Model.Framework
 		public DateTime? DateEnded { get; set; }
 		public string Reason { get; set; }
 		public string Author { get; set; }
+
+		protected TJepit Clone<TJepit>()
+			where TJepit : Jepit, new()
+		{
+			return new TJepit()
+			{
+				Author = Author,
+				DateCreated = DateCreated,
+				DateEffective = DateEffective,
+				DateEnded = DateEnded,
+				DateReplaced = DateReplaced,
+				Reason = Reason
+			};
+		}
 
 		/// <summary>
 		/// 
